@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">STGL</string>
+
+    <string name="idtxthint">用户名</string>
+    <string name="pwdtxthint">密码</string>
+    <string name="loginbtntext">登录</string>
+    <string name="registerbtntext">注册</string>
+    <string name="forgot_pwd">忘记密码？</string>
+
+    <string name="get_clue_tltle">请选择社团</string>
+    <string name="get_school_tltle">请选择学校</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

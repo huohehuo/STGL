@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backview"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+       <include
+           layout="@layout/top_bar"
+           android:id="@+id/toolbar"/>
+        <com.jude.easyrecyclerview.EasyRecyclerView
+            android:id="@+id/rv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:recyclerClipToPadding="true"
+            app:recyclerPadding="8dp"
+            app:recyclerPaddingBottom="8dp"
+            app:recyclerPaddingLeft="8dp"
+            app:recyclerPaddingRight="8dp"
+            app:recyclerPaddingTop="8dp"
+            app:scrollbarStyle="insideOverlay"
+            app:scrollbars="none"
+            android:layout_below="@+id/toolbar" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#90909090" />
+
+            <TextView
+                android:id="@+id/tv_base_info2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/img_gonggao"
+                android:drawablePadding="2dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center|left"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="社团公告"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txt_gg_xibu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center|left"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="15dp"
+
+                android:text="社长说：明天动漫展，每个人必须穿僵尸服参展，讲道理，违者下次社团活动请吃东西   ( = =)````````````````"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+
+                android:background="#90909090" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

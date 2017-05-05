@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_all_peple"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="lins.com.stgl.ui.ClubManActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/top_bar" />
+
+        <com.jude.easyrecyclerview.EasyRecyclerView
+            android:id="@+id/rv_all_people"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:recyclerClipToPadding="true"
+            app:recyclerPadding="8dp"
+            app:recyclerPaddingBottom="8dp"
+            app:recyclerPaddingLeft="8dp"
+            app:recyclerPaddingRight="8dp"
+            app:recyclerPaddingTop="8dp"
+            app:scrollbarStyle="insideOverlay"
+            app:scrollbars="none" />
+    </RelativeLayout>
+</layout>

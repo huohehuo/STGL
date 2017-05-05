@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/topbar"
+            layout="@layout/top_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:id="@+id/rl_icon"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/iv_club_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_launcher" />
+                        <ImageView
+                            android:id="@+id/iv_updata_gg"
+                            android:visibility="gone"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/iv_club_icon"
+                            android:background="@drawable/pen"/>
+                    </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_text"
+                            android:layout_width="wrap_content"
+                            android:textSize="18dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:padding="20dp"
+                            android:layout_toRightOf="@+id/rl_icon"
+                            android:text="公告：" />
+                        <TextView
+                            android:id="@+id/tv_gonggao"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="20dp"
+                            android:textSize="15dp"
+                            android:layout_toRightOf="@+id/tv_text"
+                            android:gravity="center_vertical"
+                            android:text="公告" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_board"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/cv_one"
+                    android:layout_height="66dp"
+                    android:layout_margin="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_toLeftOf="@+id/tv_board"
+                            android:src="@drawable/msg" />
+
+                        <TextView
+                            android:id="@+id/tv_board"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="留言板"
+                            android:textSize="24dp" />
+
+                        <TextView
+                            android:id="@+id/tv_board_newnum"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:visibility="gone"
+                            android:text="1"
+                            android:textSize="25sp"
+                            android:textColor="#e22020"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:layout_toRightOf="@+id/tv_board"
+                             />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_two"
+                    android:layout_below="@+id/cv_board"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_below="@+id/cv_two"
+                        app:image_scale_type="fit_xy" />
+                    <ImageView
+                        android:id="@+id/iv_no_ad"
+                        android:src="@drawable/side_nav_bar"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="180dp" />
+                    <LinearLayout
+                        android:layout_marginTop="100dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_hd"
+                            android:layout_width="0dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/hd" />
+
+                        <ImageView
+                            android:id="@+id/iv_allman"
+                            android:layout_width="0dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/allman" />
+
+                        <ImageView
+                            android:id="@+id/iv_nm"
+                            android:layout_width="0dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/nm" />
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <!--<com.youth.banner.Banner-->
+                    <!--android:id="@+id/banner"-->
+                    <!--android:layout_gravity="bottom"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="150dp"-->
+                    <!--android:layout_below="@+id/cv_two"-->
+                    <!--app:image_scale_type="fit_xy" />-->
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

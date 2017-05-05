@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cluetype">
+        <item>动漫社</item>
+        <item>乒乓球爱好者协会</item>
+        <item>轮滑社</item>
+        <item>羽毛球社</item>
+        <item>足球社</item>
+        <item>户外活动爱好者协会</item>
+        <item>计算机爱好者协会</item>
+    </string-array>
+    
+     <string-array name="schooltype">
+        <item>广西科技大学</item>
+        <item>广西医科大学 </item>
+        <item>广西民族大学</item>
+        <item>广西科技大学鹿山学院</item>
+        <item>广西大学</item>
+        <item>广西北部湾大学</item>
+        <item>广西农业大学</item>
+    </string-array>
+    
+</resources>

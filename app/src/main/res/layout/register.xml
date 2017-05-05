@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e7e7e7"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/top_bar"
+            android:id="@+id/toolbar"/>
+
+        <LinearLayout
+            android:id="@+id/login_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_rgt_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_edittext"
+                android:ems="10"
+                android:hint="请输入名字...(必填)"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA"
+                android:textSize="15dp" />
+            <!-- 横线  -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#e7e7e7" />
+
+            <EditText
+                android:id="@+id/et_rgt_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_edittext"
+                android:ems="10"
+                android:hint="请输入密码...(必填)"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA"
+                android:textSize="15dp" />
+            <!-- 横线  -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#e7e7e7" />
+
+            <RadioGroup
+
+                android:id="@+id/group_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_men"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="男"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rb_women"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女"
+                    android:textColor="#000000" />
+
+            </RadioGroup>
+
+            <!-- 横线  -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#e7e7e7" />
+
+            <EditText
+                android:id="@+id/et_rgt_age"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_edittext"
+                android:ems="10"
+                android:hint="请输入年龄..."
+                android:inputType="number"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#e7e7e7" />
+
+            <Spinner
+                android:id="@+id/sp_club"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/cluetype"
+                android:prompt="@string/get_clue_tltle"
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/sp_school"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/schooltype"
+                android:prompt="@string/get_school_tltle"
+                android:spinnerMode="dialog" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_rgt"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/login_button_style"
+            android:text="@string/registerbtntext"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</layout>

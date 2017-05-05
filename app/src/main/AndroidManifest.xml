@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lins.com.stgl">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.NmChatActivity" />
+
+        <receiver android:name=".utils.GgBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BroadcastReceiverTest" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ui.ClubManActivity" />
+        <activity android:name=".ui.HDongActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ui.login.LoginActivity" />
+        <activity android:name=".ui.login.ForgetActivity" />
+        <activity android:name=".ui.login.RegisterActivity" />
+        <activity android:name=".ui.UpdataGGActivity" />
+        <activity android:name=".ui.ChangeInfoActivity" />
+        <activity android:name=".ui.HDongDeleteActivity" />
+        <activity android:name=".ui.FriendActivity" />
+        <activity android:name=".ui.ForVipActivity" />
+        <activity android:name=".ui.AddNmChatActivity" />
+        <activity android:name=".ui.AddHdActivity" />
+        <activity android:name=".ui.HdShowActivity" />
+        <activity android:name=".ui.AddPlunActivity" />
+        <activity android:name=".ui.ReplyActivity" />
+        <activity android:name=".ui.MsgBoardActivity" />
+
+        <service
+            android:name=".utils.MyIntentService"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

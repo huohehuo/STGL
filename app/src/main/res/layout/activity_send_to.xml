@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/backview">
+
+    <include
+        layout="@layout/top_bar"
+        android:id="@+id/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+       
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical" >
+			<TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="回复：" />
+            <EditText
+                android:id="@+id/et_reply"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+               android:gravity="left|top"
+               android:hint="请输入评论。。。。"
+               android:textSize="12sp"
+                android:background="@drawable/bg_edittext"
+                android:ems="10" />
+        </LinearLayout>
+
+ 		<View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+    </LinearLayout>
+</LinearLayout>
+</layout>

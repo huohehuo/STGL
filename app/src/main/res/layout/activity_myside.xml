@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backview"
+
+    android:orientation="vertical" >
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="47dp"
+    android:gravity="center_vertical"
+    android:padding="0.0px" >
+
+    <ImageView
+        android:id="@+id/bgroud"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/comm_title_bg" />
+
+    <TextView
+        android:id="@+id/head_txt"
+        style="@style/A1_Font"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="96.0dip"
+        android:paddingRight="96.0dip"
+        android:singleLine="true"
+        android:text="个人主页" />
+
+
+    
+    
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fgtwo_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_change"
+        android:orientation="horizontal" 
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_avatar_login" />
+
+        <TextView
+            android:id="@+id/txt_my_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="goodjob"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <lins.com.stgl.adapter.MyScrollView
+        android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:background="@color/backview"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_change"
+            android:textColor="@color/black"
+            android:text="活动管理" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_change"
+            android:textColor="@color/black"
+            android:text="添加活动" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_change"
+            android:textColor="@color/black"
+            android:text="关于" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp" />
+
+        <Button
+            android:layout_width="166dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_change2"
+            android:text="退出" />
+
+    </LinearLayout>
+</lins.com.stgl.adapter.MyScrollView>
+</LinearLayout>
